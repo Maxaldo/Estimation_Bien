@@ -30,4 +30,5 @@ def ft_pred(type_bien, surface_m2, nb_pieces, nb_chambres, etage, dpe, code_post
     return model.predict(X)[0]
 
 
-print(ft_pred('Appartement à vendre', 50, 3, 2, '1 étages', "A", 75011.0))
+if __name__ == "__main__":
+    print(ft_pred('Appartement à vendre', 50, 3, 2, '1 étages', "A", 75011.0))
